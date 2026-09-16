@@ -92,3 +92,48 @@ h3 {
         text-align: left;
     }
 }
+.btn {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 32px;
+    font-family: inherit;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(135deg, #c9a06f, #a47544);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(181, 137, 90, 0.35);
+    cursor: pointer;
+}
+
+.btn,
+.js body > .btn {
+    transition: opacity 1s cubic-bezier(0.28, 0.11, 0.32, 1),
+                transform 1s cubic-bezier(0.28, 0.11, 0.32, 1),
+                box-shadow 0.25s ease,
+                filter 0.25s ease;
+}
+
+.btn:hover {
+    filter: brightness(1.08);
+    box-shadow: 0 8px 20px rgba(181, 137, 90, 0.5);
+}
+
+.btn:active {
+    filter: brightness(0.95);
+    box-shadow: 0 2px 6px rgba(181, 137, 90, 0.4);
+}
+
+.btn:focus-visible {
+    outline: 2px solid #1a1a1a;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .btn {
+        width: 100%;
+        font-size: 14px;
+    }
+}
